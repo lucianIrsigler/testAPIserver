@@ -1,9 +1,0 @@
-http://localhost:3000/getAuthCode?client_id=A1231&response_type=code&scopes=map-get&redirect_uri=https://www.google.com/
-
-
-
-curl -X POST http://localhost:3000/api/token \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer <base64 encoded client_id:client_secret>" \
-  -d '{"grant_type":"authorization_code","code":"abcd1234","redirect_uri":"https://www.google.com"}'
-
